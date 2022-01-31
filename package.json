@@ -2,7 +2,12 @@
     "name": "vibrant-max",
     "displayName": "Vibrant Max",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mattorchard/vibrant-max.git"
+    },
+    "publisher": "MatthewOrchard",
     "scripts": {
         "dev": "nodemon --watch scripts scripts/create-theme.js"
     },
@@ -11,7 +16,7 @@
         "nodemon": "2.0.15"
     },
     "engines": {
-        "vscode": "^1.63.0"
+        "vscode": "^1.60.0"
     },
     "categories": [
         "Themes"
