@@ -247,12 +247,21 @@ module.exports = formatTokenColors([
   },
   {
     name: "js variable readwrite",
-    scope:
-      "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+    scope: [
+      "variable.other.readwrite",
+      "support.variable.property",
+      "support.variable.object.process",
+      "support.variable.object.node",
+    ],
     settings: {
       foreground: palette.red[300],
       fontStyle: "bold",
     },
+  },
+  {
+    name: "Import reset",
+    scope: "variable.other.readwrite.alias",
+    settings: { fontStyle: "" },
   },
   {
     name: "js/ts json",
