@@ -1,0 +1,28 @@
+{
+    "name": "vibrant-max",
+    "displayName": "Vibrant Max",
+    "description": "",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "nodemon --watch scripts scripts/create-theme.js"
+    },
+    "devDependencies": {
+        "prettier": "2.5.1",
+        "nodemon": "2.0.15"
+    },
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Vibrant Max",
+                "uiTheme": "vs-dark",
+                "path": "./themes/vibrant-max.json"
+            }
+        ]
+    }
+}
