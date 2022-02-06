@@ -1236,10 +1236,68 @@ module.exports = formatTokenColors([
     settings: palette.purple[300],
   },
   {
+    name: "SQL Base",
+    scope: "source.sql",
+    settings: palette.blue[300],
+  },
+  {
+    name: "SQL Keyword",
+    scope: "keyword.other.sql",
+    settings: {
+      fontStyle: "italic bold",
+    },
+  },
+  {
+    name: "SQL DML",
+    scope: "keyword.other.DML.sql",
+    settings: {
+      fontStyle: "italic",
+    },
+  },
+  {
     name: "SQL Variables",
     scope: ["text.variable", "text.bracketed"],
     settings: palette.red[400],
   },
+  {
+    name: "SQL Star",
+    scope: "keyword.operator.star.sql",
+    settings: {
+      foreground: palette.orange[400],
+      fontStyle: "underline",
+    },
+  },
+  {
+    name: "SQL Operators",
+    scope: [
+      "keyword.operator.concatenator.sql",
+      "keyword.operator.math.sql",
+      "keyword.operator.comparison.sql",
+    ],
+    settings: palette.orange[400],
+  },
+  {
+    name: "SQL Keys",
+    scope: ["keyword.other.DDL.create.II.sql", "keyword.other.order.sql"],
+    settings: {
+      foreground: palette.yellow[400],
+      fontStyle: "bold underline",
+    },
+  },
+  {
+    name: "SQL Quoted Identifier",
+    scope: "string.quoted.double.sql",
+    settings: palette.red[500],
+  },
+  {
+    name: "SQL Alias",
+    scope: "keyword.other.alias.sql",
+    settings: {
+      foreground: palette.teal[400],
+      fontStyle: "bold underline",
+    },
+  },
+
   {
     name: "types",
     scope: ["support.type.swift", "support.type.vb.asp"],
