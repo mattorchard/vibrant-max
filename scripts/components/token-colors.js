@@ -1486,16 +1486,38 @@ module.exports = formatTokenColors([
     settings: palette.purple[300],
   },
   {
-    name: "js/ts italic",
+    name: "super",
+    scope: "variable.language.super",
+    settings: {
+      fontStyle: "italic",
+    },
+  },
+  {
+    name: "JSX Attribute",
     scope: [
       "entity.other.attribute-name.js",
       "entity.other.attribute-name.ts",
       "entity.other.attribute-name.jsx",
       "entity.other.attribute-name.tsx",
-      "variable.language.super",
     ],
     settings: {
       fontStyle: "italic",
+      foreground: palette.pink[300],
+    },
+  },
+  {
+    name: "JSX Tag",
+    scope: ["support.class.component.tsx", "support.class.component.jsx"],
+    settings: {
+      foreground: palette.blue[300],
+    },
+  },
+
+  {
+    name: "JSX Tag",
+    scope: ["constant.character.entity.tsx", "constant.character.entity.jsx"],
+    settings: {
+      fontStyle: "underline",
     },
   },
   {
