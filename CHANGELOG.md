@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.0.5]
+
+- Improved JSX styles
+
 ## [0.0.4]
 
 - Improved SQL highlighting
