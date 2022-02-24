@@ -1462,7 +1462,10 @@ module.exports = formatTokenColors([
   {
     name: "variable.other.constant.property",
     scope: ["variable.other.constant.property"],
-    settings: palette.red[400],
+    settings: {
+      foreground: palette.pink[500],
+      fontStyle: "italic",
+    },
   },
   {
     name: "entity.other.inherited-class",
