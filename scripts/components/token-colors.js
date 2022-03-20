@@ -19,7 +19,7 @@ module.exports = formatTokenColors([
   {
     name: "support.variable.magic.python",
     scope: "support.variable.magic.python",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "punctuation.separator.parameters.python",
@@ -55,7 +55,7 @@ module.exports = formatTokenColors([
   {
     name: "variable.language.rust",
     scope: "variable.language.rust",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "support.constant.edge",
@@ -143,7 +143,7 @@ module.exports = formatTokenColors([
     name: "js/ts variable.other.constant",
     scope: "variable.other.constant",
     settings: {
-      foreground: palette.red[450],
+      foreground: palette.variable.main,
       fontStyle: "",
     },
   },
@@ -182,7 +182,7 @@ module.exports = formatTokenColors([
   {
     name: "java variable.name",
     scope: "meta.definition.variable.name.java",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "operator channel",
@@ -254,7 +254,7 @@ module.exports = formatTokenColors([
       "support.variable.object.node",
     ],
     settings: {
-      foreground: palette.red[300],
+      foreground: palette.variable.light,
       fontStyle: "bold",
     },
   },
@@ -427,7 +427,7 @@ module.exports = formatTokenColors([
   {
     name: "Variables",
     scope: "variable",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "Variables",
@@ -477,7 +477,7 @@ module.exports = formatTokenColors([
   {
     name: "Type Parameter",
     scope: "entity.name.type.parameter",
-    settings: palette.teal[300],
+    settings: palette.orange[300],
   },
 
   {
@@ -502,12 +502,12 @@ module.exports = formatTokenColors([
   {
     name: "Class name php",
     scope: "variable.other.class.php",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "Type Name",
     scope: "entity.name.type",
-    settings: palette.teal[200],
+    settings: palette.orange[200],
   },
   {
     name: "Keyword Control",
@@ -565,7 +565,10 @@ module.exports = formatTokenColors([
   {
     name: "Support",
     scope: "support.function",
-    settings: palette.teal[400],
+    settings: {
+      foreground: palette.blue[400],
+      fontStyle: "italics",
+    },
   },
   {
     name: "Support type",
@@ -590,7 +593,7 @@ module.exports = formatTokenColors([
   {
     name: "Strings",
     scope: "string",
-    settings: palette.green[300],
+    settings: palette.literals.main,
   },
   {
     name: "Constant other symbol",
@@ -600,7 +603,7 @@ module.exports = formatTokenColors([
   {
     name: "Integers",
     scope: "constant.numeric",
-    settings: palette.green[400],
+    settings: palette.literals.dark,
   },
   {
     name: "Big Integers",
@@ -633,7 +636,7 @@ module.exports = formatTokenColors([
   {
     name: "Tags",
     scope: "entity.name.tag",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "Attributes",
@@ -1023,7 +1026,7 @@ module.exports = formatTokenColors([
     name: "ts primitive/builtin types",
     scope:
       "support.type.primitive.ts,support.type.builtin.ts,support.type.primitive.tsx,support.type.builtin.tsx",
-    settings: palette.teal[400],
+    settings: palette.orange[300],
   },
   {
     name: "block scope",
@@ -1038,7 +1041,7 @@ module.exports = formatTokenColors([
   {
     name: "cs local variable",
     scope: "entity.name.variable.local.cs",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     scope: "token.info-token",
@@ -1093,32 +1096,32 @@ module.exports = formatTokenColors([
   {
     name: "js func parameter",
     scope: ["variable.parameter.function.js"],
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "js template literals begin",
     scope: ["keyword.other.template.begin"],
-    settings: palette.green[300],
+    settings: palette.literals.main,
   },
   {
     name: "js template literals end",
     scope: ["keyword.other.template.end"],
-    settings: palette.green[300],
+    settings: palette.literals.main,
   },
   {
     name: "js template literals variable braces begin",
     scope: ["keyword.other.substitution.begin"],
-    settings: palette.green[300],
+    settings: palette.literals.main,
   },
   {
     name: "js template literals variable braces end",
     scope: ["keyword.other.substitution.end"],
-    settings: palette.green[300],
+    settings: palette.literals.main,
   },
   {
-    name: "js operator.assignment",
-    scope: [],
-    settings: palette.teal[400],
+    name: "JSON strings",
+    scope: "string.quoted.double.json",
+    settings: palette.green[300],
   },
   {
     name: "go operator",
@@ -1153,7 +1156,7 @@ module.exports = formatTokenColors([
   {
     name: "html/pug (jade) escaped characters and entities",
     scope: ["constant.character.entity"],
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "styling css pseudo-elements/classes to be able to differentiate from classes which are the same colour",
@@ -1211,7 +1214,7 @@ module.exports = formatTokenColors([
   {
     name: "Groovy Variables",
     scope: ["meta.definition.variable.name.groovy"],
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "Groovy Inheritance",
@@ -1257,7 +1260,7 @@ module.exports = formatTokenColors([
   {
     name: "SQL Variables",
     scope: ["text.variable", "text.bracketed"],
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "SQL Star",
@@ -1336,7 +1339,7 @@ module.exports = formatTokenColors([
   {
     name: "string",
     scope: ["beginning.punctuation.definition.quote.markdown.xi"],
-    settings: palette.green[300],
+    settings: palette.literals.main,
   },
   {
     name: "comments",
@@ -1475,7 +1478,7 @@ module.exports = formatTokenColors([
   {
     name: "c variable readwrite",
     scope: "variable.other.readwrite.c",
-    settings: palette.red[400],
+    settings: palette.variable.main,
   },
   {
     name: "php scope",
@@ -1527,7 +1530,7 @@ module.exports = formatTokenColors([
     name: "Param",
     scope: "variable.parameter",
     settings: {
-      foreground: palette.red[400],
+      foreground: palette.variable.dark,
       fontStyle: "italic",
     },
   },

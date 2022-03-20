@@ -1,7 +1,5 @@
-module.exports = {
+const baseColors = {
   transparent: "#00000000",
-  current: "currentColor",
-  alpha: (color, alpha) => `${color}${alpha}`,
   black: "#000000",
   white: "#FFFFFF",
 
@@ -16,6 +14,7 @@ module.exports = {
     700: "#2D3748",
     800: "#1A202C",
     900: "#171923",
+    1000: "#0F1016",
   },
 
   red: {
@@ -135,4 +134,23 @@ module.exports = {
     800: "#702459",
     900: "#521B41",
   },
+};
+
+const namedColors = {
+  variable: {
+    main: baseColors.green[300],
+    dark: baseColors.green[400],
+    light: baseColors.green[200],
+  },
+  literals: {
+    main: baseColors.teal[300],
+    dark: baseColors.teal[400],
+  },
+};
+
+module.exports = {
+  ...baseColors,
+  ...namedColors,
+  current: "currentColor",
+  alpha: (color, alpha) => `${color}${alpha}`,
 };

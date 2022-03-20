@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.0.7]
+
+- Major changes to increase contrast and reduce usage of reds
+- Darkened background color
+- Variables now use green variants instead of reds
+- Literals now use teal variants instead of greeens
+- Types now use orange variants instead of teals
+
 ## [0.0.6]
 
 - Altered class member styles

@@ -1,7 +1,7 @@
 const palette = require("../palette");
 module.exports = {
   enumMember: {
-    foreground: palette.green[200],
+    foreground: palette.teal[400],
   },
   "method.defaultLibrary": {
     foreground: palette.blue[400],
