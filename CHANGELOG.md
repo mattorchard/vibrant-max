@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.8]
+
+- Adds custom colorized bracket pair matching
+- Darkens terminal and editor breadcrumb backgrounds
+
 ## [0.0.7]
 
 - Major changes to increase contrast and reduce usage of reds
